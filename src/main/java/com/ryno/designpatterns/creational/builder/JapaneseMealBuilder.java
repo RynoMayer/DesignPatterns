@@ -10,21 +10,17 @@ package com.ryno.designpatterns.creational.builder;
  *
  * @author Ryno
  */
-public class ItalianMealBuilder implements MealBuilder {
+public class JapaneseMealBuilder implements MealBuilder{
     private Meal meal;
-    
-    public ItalianMealBuilder(){
-        meal=new Meal();
-    }
 
     @Override
     public void buildDrink() {
-        meal.setDrink("wine");
+       meal.setDrink("sake");
     }
 
     @Override
     public void buildFood() {
-      meal.setFood("Pizza");  
+        meal.setFood("teriyaki");
     }
 
     @Override
